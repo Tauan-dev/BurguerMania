@@ -1,14 +1,21 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css',
+  styleUrls: ['./button.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ButtonComponent {
   @Input() label: string = '';
-  @Input() type: 'primary' | 'secondary' | 'third' = 'primary';
+  @Input() type: 'primary' | 'secondary' | 'third' | 'submit' = 'primary';
+  @Input() routerLink?: string; // Suporte para rotas com routerLink
+
+  onClick() {
+    console.log('Button clicked');
+  }
 }

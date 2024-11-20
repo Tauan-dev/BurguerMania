@@ -1,1 +1,61 @@
-<p>pedido works!</p>
+<app-header></app-header>
+
+<div class="container">
+  <h1>PEDIDO</h1>
+  <div class="pedido-container">
+    <form (submit)="onSubmit()" #pedidoForm="ngForm">
+      <div class="form-grid">
+        <!-- Primeira linha -->
+        <app-input
+          label="Produto *"
+          type="text"
+          [(ngModel)]="pedido.produto1"
+          name="produto1"
+          size="medium"
+          required
+        ></app-input>
+        <app-input
+          label="Quantidade *"
+          type="number"
+          [(ngModel)]="pedido.quantidade1"
+          name="quantidade1"
+          size="medium"
+          required
+        ></app-input>
+
+        <!-- Segunda linha -->
+        <app-input
+          label="Produto *"
+          type="text"
+          [(ngModel)]="pedido.produto2"
+          name="produto2"
+          size="medium"
+          required
+        ></app-input>
+        <app-input
+          label="Quantidade *"
+          type="number"
+          [(ngModel)]="pedido.quantidade2"
+          name="quantidade2"
+          size="medium"
+          required
+        ></app-input>
+        <app-input
+          label="Observação *"
+          type="textarea"
+          [(ngModel)]="pedido.observacao"
+          name="observacao"
+          size="large"
+          required
+        ></app-input>
+
+        <!-- Observação -->
+      </div>
+
+      <!-- Botão de enviar -->
+      <div class="form-footer">
+        <app-button [label]="'Finalizar'" [type]="'primary'"></app-button>
+      </div>
+    </form>
+  </div>
+</div>

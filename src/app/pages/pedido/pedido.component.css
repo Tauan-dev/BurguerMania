@@ -1,0 +1,54 @@
+.pedido-container {
+  max-width: 1007px;
+  max-height: 754px;
+  margin: 2rem auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(241, 216, 216, 0.1);
+  text-align: center;
+}
+h1 {
+  font-family: "Inter";
+  color: var(--text-color2);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.pedido-container h1 {
+  color: #ff0000;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.form-grid app-input {
+  grid-column: span 2;
+}
+
+.form-footer {
+  margin-top: 1.5rem;
+}
+
+app-button {
+  margin-top: 1rem;
+}
+
+.input-pedido {
+  width: 200px;
+}

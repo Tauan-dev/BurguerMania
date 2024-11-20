@@ -1,1 +1,11 @@
-<button [ngClass]="type">{{ label }}</button>
+<ng-container *ngIf="routerLink; else regularButton">
+  <a [routerLink]="routerLink" [ngClass]="type" class="button">
+    {{ label }}
+  </a>
+</ng-container>
+
+<ng-template #regularButton>
+  <button [ngClass]="type" class="button" (click)="onClick()">
+    {{ label }}
+  </button>
+</ng-template>

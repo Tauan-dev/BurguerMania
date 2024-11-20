@@ -1,18 +1,17 @@
 <header>
   <section class="head">
     <img
-      src="https://cdn.discordapp.com/attachments/1125892268138713201/1308079348498042921/bmlogo.png?ex=673ca353&is=673b51d3&hm=cc942d7d53fd46914c1e4f9771538819bc5ec160191675e621f8f08a3b6f0980&"
-      alt="a"
+      src="https://cdn.discordapp.com/attachments/1125892268138713201/1308079348498042921/bmlogo.png?ex=673df4d3&is=673ca353&hm=629300288816bf6e369d0148149813cdebcbaabff1617c98c9cc867157490d4a&"
+      alt="Logo Burguer Mania"
       class="logo"
     />
-    <div>
-      <nav class="lista">
-        <a routerLink="/">Início</a>
-        <a routerLink="/categoria">Categoria</a>
-        <a routerLink="/cardapio">Cardápio</a>
-        <a routerLink="/localizacao">Localização</a>
-        <a routerLink="/contato">Contato</a>
-      </nav>
-    </div>
+    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+    <nav class="lista" [class.active]="menuActive">
+      <a routerLink="/">Início</a>
+      <a routerLink="/cardapio">Categorias</a>
+      <a routerLink="/cardapio-completo">Cardápio</a>
+      <a routerLink="/">Localização</a>
+      <a routerLink="/">Contato</a>
+    </nav>
   </section>
 </header>

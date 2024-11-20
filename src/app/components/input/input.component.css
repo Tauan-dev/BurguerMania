@@ -1,19 +1,17 @@
 .input-container {
   margin-bottom: 1rem;
-  width: 396px;
-  height: 57px;
 }
 
 label {
-  display: block;
-  font-weight: bold;
+  display: flex;
+  font-weight: 600;
+  align-items: flex-start;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--text-color1);
 }
 
 input {
-  width: 100%;
-  padding: 0.5rem;
+  padding: 5px;
   border: 1px solid var(--border-color2);
   border-radius: 4px;
   font-size: 1rem;
@@ -22,4 +20,24 @@ input {
 input:focus {
   outline: none;
   border-color: #ff0000;
+}
+
+.label {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.input-container.small input {
+  width: 150px;
+  height: 40px;
+}
+
+.input-container.medium input {
+  width: 328px;
+  height: 37px;
+}
+
+.input-container.large input {
+  width: 732px;
+  height: 175px;
 }

@@ -1,32 +1,47 @@
-button {
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
+/* Estilo base para todos os botões */
+button.button,
+a.button {
+  text-decoration: none;
+  font-size: 23px;
   cursor: pointer;
+  font-family: "Inter";
+  font-weight: bold;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-button.primary {
+/* Botão Primário */
+button.primary,
+a.button.primary {
   font-family: "Inter";
   font-size: 23px;
   font-weight: bold;
   min-width: 246px;
-  min-height: 66px;
+  min-height: 56px;
   background-color: var(--button-color1);
   color: #ffff;
   border: none;
 }
 
-button.secondary {
+/* Botão Secundário */
+button.secondary,
+a.button.secondary {
   font-family: "Inter";
   font-size: 23px;
   font-weight: bold;
   min-width: 246px;
-  min-height: 66px;
+  min-height: 55px;
   background-color: var(--button-color2);
   color: var(--text-color1);
   border: 1px solid var(--text-color2);
 }
 
-button.third {
+/* Botão Terciário */
+button.third,
+a.button.third {
   font-family: "Inter";
   font-size: 23px;
   font-weight: bold;

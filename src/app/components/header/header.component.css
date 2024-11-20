@@ -1,3 +1,4 @@
+/* Estilo geral */
 .logo {
   max-width: 236px;
   max-height: 53px;
@@ -7,18 +8,67 @@
 .head {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .lista {
-  padding: 15px;
   display: flex;
-  justify-content: center;
-  list-style-type: none;
-  justify-content: space-around;
-  gap: 60px;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista a {
+  text-decoration: none;
   color: var(--text-color1);
   font-weight: bold;
-  font-family: "Inter";
-  margin-right: 47px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.lista a:hover {
+  color: #ff0000; /* Destaque no hover */
+}
+
+/* Botão para menu em dispositivos pequenos */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .lista {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: 4px;
+    padding: 10px 0;
+  }
+
+  .lista.active {
+    display: flex;
+  }
+
+  .lista a {
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color1);
+  }
 }

@@ -24,14 +24,3 @@
   justify-content: center;
   gap: 1rem;
 }
-
-.actions app-button:first-child {
-  background-color: #ff0000;
-  color: white;
-}
-
-.actions app-button:last-child {
-  background-color: white;
-  color: #ff0000;
-  border: 2px solid #ff0000;
-}
