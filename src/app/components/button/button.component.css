@@ -51,3 +51,36 @@ a.button.third {
   color: var(--text-color3);
   border: none;
 }
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  button.button,
+  a.button {
+    font-size: 20px;
+    min-width: 200px;
+    min-height: 50px;
+  }
+
+  button.third,
+  a.button.third {
+    min-width: 300px;
+    min-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  button.button,
+  a.button {
+    font-size: 18px;
+    min-width: 180px;
+    min-height: 45px;
+    padding: 10px;
+  }
+
+  button.third,
+  a.button.third {
+    min-width: 250px;
+    min-height: 50px;
+  }
+}

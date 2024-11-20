@@ -13,10 +13,12 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap; /* Permite quebrar para outra linha se necessário */
 }
 
 .details-image {
   width: 280px;
+  max-width: 100%; /* Garante que a imagem não ultrapasse o container */
 }
 
 .details-container h3 {
@@ -24,6 +26,7 @@
   color: var(--text-color2);
   font-weight: 700;
   font-size: 30px;
+  text-align: center; /* Centraliza o texto */
 }
 
 .price {
@@ -31,6 +34,7 @@
   color: var(--text-color1);
   font-weight: 700;
   font-size: 40px;
+  text-align: center; /* Centraliza o preço */
 }
 
 .desc {
@@ -40,4 +44,53 @@
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .details-container {
+    width: 90%; /* Adapta a largura ao tamanho da tela */
+    padding: 5px;
+  }
+
+  .details-container h3 {
+    font-size: 24px; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .price {
+    font-size: 28px; /* Ajusta o tamanho da fonte */
+  }
+
+  .details-image {
+    width: 200px; /* Reduz a largura da imagem */
+  }
+
+  .desc {
+    margin-top: 40px; /* Ajusta a margem superior */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 0;
+  }
+
+  .details-container h3 {
+    font-size: 20px; /* Fonte menor em telas muito pequenas */
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .details-image {
+    width: 150px; /* Reduz ainda mais a imagem */
+  }
+
+  .desc {
+    margin-top: 20px;
+    gap: 15px;
+  }
 }

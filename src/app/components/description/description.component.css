@@ -8,6 +8,7 @@
   gap: 28px;
   width: 606px;
   height: 336px;
+  margin: 5px;
 }
 
 .description-container h3 {
@@ -22,4 +23,44 @@
   background: var(--text-color4);
   padding: 0px 24px;
   text-align: justify;
+}
+
+/* Responsividade */
+
+/* Até 768px (tablets e telas menores) */
+@media (max-width: 768px) {
+  .description-container {
+    width: 90%; /* Adapta a largura ao tamanho da tela */
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
+    gap: 20px; /* Reduz o espaçamento entre os elementos */
+    padding: 10px; /* Adiciona padding interno */
+  }
+
+  .description-container h3 {
+    font-size: 22px; /* Reduz o tamanho da fonte */
+  }
+
+  .description-container p {
+    font-size: 16px; /* Fonte menor para telas intermediárias */
+    padding: 0 16px; /* Reduz o padding */
+  }
+}
+
+/* Até 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+  .description-container {
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: auto; /* Altura automática */
+    gap: 16px; /* Ajusta o espaçamento */
+  }
+
+  .description-container h3 {
+    font-size: 20px; /* Ajusta a fonte do título */
+  }
+
+  .description-container p {
+    font-size: 14px; /* Fonte menor */
+    padding: 0 12px; /* Reduz o padding para telas muito pequenas */
+    text-align: left; /* Texto alinhado à esquerda para melhor legibilidade */
+  }
 }
