@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --bg-color: #ffff;
+  --button-color1: #ed0000;
+  --button-color2: #ffff;
+  --text-color1: #521d16;
+  --text-color2: #ed0000;
+  --text-color3: #ffff;
+  --text-color4: #0000;
+  --border-color1: #ed0000;
+  --border-color2: #A5A4A4;
+}
+
+body {
+  margin: 0;
+}

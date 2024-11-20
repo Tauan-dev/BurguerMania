@@ -1,0 +1,25 @@
+.input-container {
+  margin-bottom: 1rem;
+  width: 396px;
+  height: 57px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color2);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff0000;
+}

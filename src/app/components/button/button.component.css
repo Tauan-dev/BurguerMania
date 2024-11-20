@@ -1,0 +1,38 @@
+button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.primary {
+  font-family: "Inter";
+  font-size: 23px;
+  font-weight: bold;
+  min-width: 246px;
+  min-height: 66px;
+  background-color: var(--button-color1);
+  color: #ffff;
+  border: none;
+}
+
+button.secondary {
+  font-family: "Inter";
+  font-size: 23px;
+  font-weight: bold;
+  min-width: 246px;
+  min-height: 66px;
+  background-color: var(--button-color2);
+  color: var(--text-color1);
+  border: 1px solid var(--text-color2);
+}
+
+button.third {
+  font-family: "Inter";
+  font-size: 23px;
+  font-weight: bold;
+  min-width: 404px;
+  min-height: 74px;
+  background-color: var(--button-color1);
+  color: var(--text-color3);
+  border: none;
+}

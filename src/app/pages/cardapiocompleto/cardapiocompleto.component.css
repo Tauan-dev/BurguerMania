@@ -1,0 +1,28 @@
+.menu-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.menu-container h1 {
+  font-size: 3rem;
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.menu-grid app-card {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-grid app-card:hover {
+  transform: scale(1.05);
+}

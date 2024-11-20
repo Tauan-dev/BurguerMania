@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div class="menu-container">
+  <h1>Categorias do Cardápio</h1>
+
+  <!-- Grid de Categorias -->
+  <div class="menu-grid">
+    <app-card
+      *ngFor="let category of categories"
+      [title]="category.title"
+      [description]="category.description"
+      [image]="category.image"
+      (click)="viewCategory(category.category)"
+    >
+    </app-card>
+  </div>
+
+  <!-- Botão para Cardápio Completo -->
+  <div class="actions">
+    <app-button
+      label="Ver Cardápio Completo"
+      type="primary"
+      routerLink="/cardapio-completo"
+    >
+    </app-button>
+  </div>
+</div>

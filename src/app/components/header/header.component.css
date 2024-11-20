@@ -1,0 +1,24 @@
+.logo {
+  max-width: 236px;
+  max-height: 53px;
+  margin-left: 25px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.lista {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  justify-content: space-around;
+  gap: 60px;
+  color: var(--text-color1);
+  font-weight: bold;
+  font-family: "Inter";
+  margin-right: 47px;
+}

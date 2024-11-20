@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+<div class="menu-container">
+  <!-- Título dinâmico -->
+  <h1>{{ category ? (category | uppercase) : "Cardápio Completo" }}</h1>
+
+  <!-- Verifica se há itens no menu -->
+  <div *ngIf="menuItems.length > 0; else noItems" class="menu-grid">
+    <app-card
+      *ngFor="let item of menuItems"
+      [title]="item.title"
+      [description]="item.description"
+      [image]="item.image"
+      (click)="navigateToDetails(item.id)"
+    ></app-card>
+  </div>
+
+  <!-- Mensagem para caso não existam itens -->
+  <ng-template #noItems>
+    <p class="no-items-message">Nenhum item disponível nesta categoria.</p>
+  </ng-template>
+</div>

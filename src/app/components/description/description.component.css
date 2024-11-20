@@ -1,0 +1,25 @@
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid var(--border-color2);
+  border-radius: 4px;
+  gap: 28px;
+  width: 606px;
+  height: 336px;
+}
+
+.description-container h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  background: var(--text-color4);
+}
+
+.description-container p {
+  font-size: 18px;
+  background: var(--text-color4);
+  padding: 0px 24px;
+  text-align: justify;
+}

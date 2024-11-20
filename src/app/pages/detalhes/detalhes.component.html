@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container">
+  <div class="details-container">
+    <img
+      [src]="burgerDetails.image"
+      [alt]="burgerDetails.title"
+      class="details-image"
+    />
+
+    <h3>{{ burgerDetails.title }}</h3>
+    <p>{{ burgerDetails.description }}</p>
+    <p class="price">{{ burgerDetails.price }}</p>
+  </div>
+
+  <div class="desc">
+    <div class="details-info">
+      <app-description [title]="'Descrição'" [content]="burgerDetails.details">
+      </app-description>
+    </div>
+
+    <app-button
+      [label]="'Comprar'"
+      [type]="'primary'"
+      (click)="onBuyClick()"
+    ></app-button>
+  </div>
+</div>
