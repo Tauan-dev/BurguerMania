@@ -9,6 +9,8 @@
   box-shadow: 0 4px 10px rgba(241, 216, 216, 0.1);
   text-align: center;
 }
+
+/* Estilo do título */
 h1 {
   font-family: "Inter";
   color: var(--text-color2);
@@ -29,6 +31,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+/* Layout do formulário */
 .form-grid {
   display: flex;
   align-items: center;
@@ -51,4 +54,50 @@ app-button {
 
 .input-pedido {
   width: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pedido-container {
+    padding: 20px;
+    max-width: 90%; /* Reduz a largura máxima */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menor sombra */
+  }
+
+  .form-grid {
+    gap: 30px; /* Diminui o espaço entre os inputs */
+    flex-direction: column; /* Empilha os inputs verticalmente */
+  }
+
+  .input-pedido {
+    width: 100%; /* Inputs ocupam toda a largura */
+  }
+
+  .form-footer {
+    margin-top: 1rem; /* Reduz espaço no footer */
+  }
+
+  h1 {
+    font-size: 24px; /* Diminui tamanho do título */
+  }
+}
+
+@media (max-width: 480px) {
+  .pedido-container {
+    padding: 15px;
+    border-radius: 4px; /* Bordas mais arredondadas */
+  }
+
+  .form-grid {
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 20px; /* Reduz mais o título */
+  }
+
+  app-button {
+    width: 100%; /* Botão ocupa toda a largura */
+    margin-top: 0.5rem;
+  }
 }
