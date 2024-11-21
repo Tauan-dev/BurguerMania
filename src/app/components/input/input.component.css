@@ -73,10 +73,12 @@ input:focus {
 @media (max-width: 480px) {
   .input-container.small input {
     height: 35px; /* Reduz a altura */
+    width: 250px;
   }
 
   .input-container.large input {
     height: 120px; /* Reduz altura do input grande */
+    width: 100%;
   }
 
   label {

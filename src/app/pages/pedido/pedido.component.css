@@ -60,13 +60,14 @@ app-button {
 @media (max-width: 768px) {
   .pedido-container {
     padding: 20px;
-    max-width: 90%; /* Reduz a largura máxima */
+    width: 90%; /* Reduz a largura máxima */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menor sombra */
   }
 
   .form-grid {
     gap: 30px; /* Diminui o espaço entre os inputs */
     flex-direction: column; /* Empilha os inputs verticalmente */
+    width: 90%;
   }
 
   .input-pedido {
@@ -84,6 +85,7 @@ app-button {
 
 @media (max-width: 480px) {
   .pedido-container {
+    width: 90%;
     padding: 15px;
     border-radius: 4px; /* Bordas mais arredondadas */
   }
