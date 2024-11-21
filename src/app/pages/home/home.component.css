@@ -24,3 +24,40 @@
   justify-content: center;
   gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem; /* Reduz o tamanho do título */
+  }
+
+  .hero-image {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    max-width: 600px; /* Limita o tamanho máximo */
+  }
+
+  .actions {
+    flex-direction: column; /* Empilha os botões verticalmente */
+    gap: 0.5rem; /* Reduz o espaço entre os botões */
+    width: 100%; /* Garante que os botões fiquem centralizados */
+  }
+
+  .actions button,
+  .actions a {
+    width: 90%; /* Botões ocupam a maior parte da largura */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Título menor para telas muito pequenas */
+  }
+
+  .actions {
+    gap: 0.3rem; /* Ainda mais compactação para pequenos dispositivos */
+  }
+
+  .actions button,
+  .actions a {
+    width: 95%; /* Botões ainda mais largos para ocupar mais espaço */
+  }
+}
