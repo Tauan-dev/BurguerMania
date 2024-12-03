@@ -58,9 +58,10 @@ O **BurguerMania** possui as seguintes rotas principais:
 
 1. **Home (`/`)**: Página inicial com botões para redirecionamento ao cardápio ou pedido.
 2. **Cardápio (`/cardapio`)**: Exibe as categorias disponíveis no cardápio.
-3. **Cardápio Completo (`/cardapio-completo`)**: Lista os hambúrgueres disponíveis em uma categoria.
-4. **Detalhes (`/detalhes/:id`)**: Mostra os detalhes de um hambúrguer específico.
-5. **Pedido (`/pedido`)**: Permite ao usuário preencher e enviar um pedido.
+3. **Cardápio Completo (`/cardapio-completo`)**: Lista os hambúrgueres disponíveis.
+4. **Cardápio Completo (`/cardapio-completo/:categoryId`)**: Lista os hambúrgueres disponíveis em uma categoria.
+5. **Detalhes (`/detalhes/:id`)**: Mostra os detalhes de um hambúrguer específico.
+6. **Pedido (`/pedido`)**: Permite ao usuário preencher e enviar um pedido.
 
 ### **Exemplo de Uso**
 
