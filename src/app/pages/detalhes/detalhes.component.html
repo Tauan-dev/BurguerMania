@@ -1,20 +1,28 @@
 <app-header></app-header>
 <div class="container">
   <div class="details-container">
+    <!-- Ajuste para os nomes corretos dos campos da API -->
     <img
-      [src]="burgerDetails.image"
-      [alt]="burgerDetails.title"
+      src="../../../assets/burguercard.png"
+      [alt]="burgerDetails?.name"
       class="details-image"
     />
 
-    <h3>{{ burgerDetails.title }}</h3>
-    <p>{{ burgerDetails.description }}</p>
-    <p class="price">{{ burgerDetails.price }}</p>
+    <h3>{{ burgerDetails?.name }}</h3>
+    <!-- Ajuste para o nome correto do campo do título -->
+    <p>{{ burgerDetails?.baseDescription }}</p>
+    <!-- Ajuste para o nome correto da descrição -->
+    <p class="price">${{ burgerDetails?.price }}</p>
+    <!-- Ajuste para o nome correto do campo de preço -->
   </div>
 
   <div class="desc">
     <div class="details-info">
-      <app-description [title]="'Descrição'" [content]="burgerDetails.details">
+      <app-description
+        [title]="'Descrição'"
+        [content]="burgerDetails?.fullDescription"
+      >
+        <!-- Ajuste para o nome correto do campo da descrição detalhada -->
       </app-description>
     </div>
 

@@ -6,11 +6,11 @@
   <!-- Grid de Categorias -->
   <div class="menu-grid">
     <app-card
-      *ngFor="let category of categories"
-      [title]="category.title"
+      *ngFor="let category of categories$ | async"
+      [title]="category.name"
       [description]="category.description"
-      [image]="category.image"
-      (click)="viewCategory(category.category)"
+      [image]="category.pathImage"
+      (click)="viewCategory(category.id)"
     >
     </app-card>
   </div>

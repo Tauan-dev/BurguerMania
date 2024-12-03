@@ -2,15 +2,17 @@
 
 <div class="menu-container">
   <!-- Título dinâmico -->
-  <h1>{{ category ? (category | uppercase) : "Cardápio Completo" }}</h1>
+  <h1>{{ categoryId ? "Categoria " + categoryId : "Cardápio Completo" }}</h1>
 
   <!-- Verifica se há itens no menu -->
   <div *ngIf="menuItems.length > 0; else noItems" class="menu-grid">
     <app-card
       *ngFor="let item of menuItems"
+      [id]="item.id"
       [title]="item.title"
       [description]="item.description"
       [image]="item.image"
+      [category]="item.category"
       (click)="navigateToDetails(item.id)"
     ></app-card>
   </div>
