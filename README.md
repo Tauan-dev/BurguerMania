@@ -15,8 +15,8 @@ O **BurguerMania** é uma aplicação desenvolvida com Angular para gerenciar pe
 3. [Uso](#uso)
 4. [Funcionalidades](#funcionalidades)
 5. [Contribuição](#contribuição)
-6. [Licença](#licença)
-7. [Contato](#contato)
+6. [Vercel](#vercel)
+7. [API](#api)
 
 ---
 
@@ -96,3 +96,11 @@ Se você deseja contribuir para o projeto, siga as etapas abaixo:
    ```bash
    git checkout -b feature/nova-feature
    ```
+
+## **Vercel**
+Versão anterior upada na Vercel com os dados mocados no front :
+https://burguer-mania-red.vercel.app/ 
+
+## **API**
+
+Repositório da Api .NET : https://github.com/Tauan-dev/ApiBurguerMania
